@@ -22,7 +22,15 @@ addGift = () => {
         return (
             <div>
                 <h2>Gift Giver</h2>
-                <Button className = 'btn-add' onClick={this.addGift}>Add Gift</Button>
+                <div className='gift-list'> </div>
+                {
+                    this.state.gifts.map( gift => {
+                        return (
+                        <div> </div>
+                        )
+                    })
+                }
+                <Button className='btn-add' onClick={this.addGift}>Add Gift</Button>
             </div>
         )
  }
